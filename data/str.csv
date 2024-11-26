@@ -1,0 +1,5 @@
+strlen(),返回字符串长度
+strcmp(),比较字符串值
+strncmp(),比较字符串的前n个字符值
+strcpy(),拷贝字符串至指定空间
+strchr(),搜索字符串

@@ -1,0 +1,17 @@
+*
+!*.*
+!*/
+
+### macOS ###
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+.lcpr_data
+.obsidian
+articles
+test.*

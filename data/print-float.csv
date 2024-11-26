@@ -1,0 +1,5 @@
+类型,标识符,标识符（科学型）,标识符（智能型）
+ﬂoat,%f,%e,%g
+double,%lf,%le,%lg
+long double,%Lf,%Le,%Lg
+
