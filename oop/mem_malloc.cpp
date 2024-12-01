@@ -1,8 +1,8 @@
 #include <cstdio>
-#include <stdlib.h>
-#include <string>
+#include <cstdlib>
+#include <cstring>
 
-int main() {
+auto main() -> int {
   char *str;
 
   /* 最初的内存分配 */

@@ -9,7 +9,7 @@ void power_up_rat_thing(int nuclear_isotopes) {
   }
 }
 
-int main() {
+auto main() -> int {
   printf("Rat-thing power: %d\n", rat_things_power);
   power_up_rat_thing(100);
 

@@ -25,7 +25,7 @@ private:
 };
 
 // 程序的主函数
-int main() {
+auto main() -> int {
   Box Box1;            // 声明 Box1，类型为 Box
   Box Box2;            // 声明 Box2，类型为 Box
   Box Box3;            // 声明 Box3，类型为 Box

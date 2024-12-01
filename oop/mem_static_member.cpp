@@ -14,7 +14,7 @@ struct RatThing {
 
 int RatThing::rat_things_power = 200;
 
-int main() {
+auto main() -> int {
   RatThing::power_up_rat_thing(100);
   RatThing::power_up_rat_thing(500);
 }

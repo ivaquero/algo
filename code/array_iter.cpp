@@ -1,7 +1,9 @@
+#include <vector>
+
 class Solution {
-  public:
-    vector<int> Obj(vector<int> &nums) {
-        for (int i = 0; i < nums.size(); i++) {
-        }
+public:
+  std::vector<int> Obj(std::vector<int> &nums) {
+    for (int i = 0; i < nums.size(); i++) {
     }
-}
+  }
+};

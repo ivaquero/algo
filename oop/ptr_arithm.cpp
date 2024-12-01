@@ -1,6 +1,6 @@
 #include <cstdio>
 
-int main() {
+auto main() -> int {
   char lower[] = "abc?e";
   char upper[] = "ABC?E";
   char *upper_ptr = &upper[0];

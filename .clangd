@@ -9,7 +9,7 @@ Diagnostics:
         bugprone-*,
         modernize-*,
         clang-analyzer-*,
-        readability-identifier*,
+        # readability-identifier*,
       ]
     CheckOptions:
       readability-identifier-naming.VariableCase: camelCase

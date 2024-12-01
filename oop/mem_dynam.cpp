@@ -7,7 +7,7 @@ public:
   ~Box() { cout << "调用析构函数！" << endl; }
 };
 
-int main() {
+auto main() -> int {
   Box *myBoxArray = new Box[4];
 
   delete[] myBoxArray; // 删除数组

@@ -1,11 +1,11 @@
 #include <cstdio>
-#include <iostream>
+
 using namespace std;
 
-int addAge(int);
+auto addAge(int) -> int;
 void addAgePoint(int &);
 
-int main(int argc, char **argv) {
+auto main(int argc, char **argv) -> int {
   int age = 45;
   int newAge = addAge(45);
   printf("age = %d\n", newAge);

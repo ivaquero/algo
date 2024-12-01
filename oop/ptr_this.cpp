@@ -1,19 +1,19 @@
 #include <cstdio>
 
 struct ClockOfTheLongNow {
-  bool set_year(int year) {
+  auto set_year(int year) -> bool {
     if (year < 2019)
       return false;
     this->year = year;
     return true;
   }
-  int get_year() { return year; }
+  auto get_year() -> int { return year; }
 
 private:
   int year;
 };
 
-int main() {
+auto main() -> int {
   ClockOfTheLongNow clock;
   ClockOfTheLongNow *clock_ptr = &clock;
   printf("Address of clock: %p\n", clock_ptr);
