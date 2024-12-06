@@ -1,7 +1,7 @@
 #import "@local/scibook:0.1.0": *
 #show: doc => conf(
   title: "C++ 速通",
-  author: ("Yāng Xīnbīn"),
+  author: "Yāng Xīnbīn",
   footer-cap: "Yāng Xīnbīn",
   header-cap: "数据结构与算法",
   outline-on: false,
