@@ -92,7 +92,7 @@ char *message = "Hello World!";
 #let data = csv("data/str.csv")
 #figure(
   ktable(data, 2),
-  caption: [字符串基本操作],
+  caption: "字符串基本操作",
   supplement: "表",
   kind: table,
 )
