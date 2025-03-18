@@ -1,6 +1,7 @@
+long long reversed = 0;
+long long temp;
+
 auto main() -> int {
-  long long reversed = 0;
-  long long temp = x;
 
   while (temp != 0) {
     int digit = temp % 10;

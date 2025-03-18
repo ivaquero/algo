@@ -1,5 +1,7 @@
+#include <array>
+
 struct student {
-  char Name[20];
+  std::array<char, 20> Name;
   float Math;
   float English;
   float Physical;

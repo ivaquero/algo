@@ -15,6 +15,7 @@ void AdjFind() {
 
 void biSearch() {
   std::vector<int> v;
+  v.reserve(10);
   for (int i = 0; i < 10; i++)
     v.push_back(i);
   // 查找的容器中元素必须的有序序列

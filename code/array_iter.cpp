@@ -2,7 +2,7 @@
 
 class Solution {
 public:
-  std::vector<int> Obj(std::vector<int> &nums) {
+  auto Obj(std::vector<int> &nums) -> std::vector<int> {
     for (int i = 0; i < nums.size(); i++) {
     }
   }

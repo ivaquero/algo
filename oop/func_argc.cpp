@@ -17,7 +17,7 @@ auto main(int argc, char **argv) -> int {
   return 0;
 }
 
-int addAge(int age) {
+auto addAge(int age) -> int {
   int result = age + 1;
   return result;
 }

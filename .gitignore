@@ -8,6 +8,9 @@
 .AppleDouble
 .LSOverride
 
+### C++ ###
+*.dSYM
+
 # Thumbnails
 ._*
 

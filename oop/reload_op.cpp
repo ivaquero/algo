@@ -43,16 +43,16 @@ auto main() -> int {
 
   // Box1 的体积
   volume = Box1.getVolume();
-  cout << "Volume of Box1 : " << volume << endl;
+  cout << "Volume of Box1 : " << volume << '\n';
   // Box2 的体积
   volume = Box2.getVolume();
-  cout << "Volume of Box2 : " << volume << endl;
+  cout << "Volume of Box2 : " << volume << '\n';
   // 把两个对象相加，得到 Box3
   Box3 = Box1 + Box2;
 
   // Box3 的体积
   volume = Box3.getVolume();
-  cout << "Volume of Box3 : " << volume << endl;
+  cout << "Volume of Box3 : " << volume << '\n';
 
   return 0;
 }

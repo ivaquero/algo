@@ -10,8 +10,8 @@ auto main(int argc, char **argv) -> int {
   int a = 1;
   int b = 45;
 
-  cout << max(x, y) << endl;
-  cout << max(a, b) << endl;
+  cout << max(x, y) << '\n';
+  cout << max(a, b) << '\n';
   return 0;
 }
 

@@ -1,12 +1,13 @@
 #include <algorithm>
 #include <cstdio>
 #include <string>
+#include <utility>
 #include <vector>
 
 class Person {
 public:
   Person(std::string name, int age) {
-    this->m_Name = name;
+    this->m_Name = std::move(name);
     this->m_Age = age;
   }
   // 重载 ==
