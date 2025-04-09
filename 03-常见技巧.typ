@@ -4,7 +4,6 @@
   author: "Yāng Xīnbīn",
   footer-cap: "Yāng Xīnbīn",
   header-cap: "数据结构与算法",
-  outline-on: false,
   doc,
 )
 
