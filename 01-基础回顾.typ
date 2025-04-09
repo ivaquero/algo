@@ -1,4 +1,4 @@
-#import "@local/scibook:0.1.0": *
+#import "@local/qooklet:0.1.0": *
 #show: doc => conf(
   title: "C++ 速通",
   author: "Yāng Xīnbīn",
@@ -34,7 +34,7 @@
 #let csv1 = csv("data/print-int.csv")
 #figure(
   ktable(csv1, 3),
-  caption: "",
+  caption: none,
   supplement: "表",
   kind: table,
 )
@@ -47,7 +47,7 @@
 #let csv1 = csv("data/print-float.csv")
 #figure(
   ktable(csv1, 4),
-  caption: "",
+  caption: none,
   supplement: "表",
   kind: table,
 )
