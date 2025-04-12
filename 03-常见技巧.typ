@@ -1,11 +1,10 @@
 #import "@local/qooklet:0.1.0": *
-#show: doc => conf(
+#show: qooklet.with(
   title: "常见技巧",
   author: "Yāng Xīnbīn",
   footer-cap: "Yāng Xīnbīn",
   header-cap: "数据结构与算法",
   lang: "zh",
-  doc,
 )
 
 = 数组
