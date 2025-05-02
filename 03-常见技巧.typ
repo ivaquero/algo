@@ -1,4 +1,4 @@
-#import "@local/qooklet:0.1.0": *
+#import "lib/lib.typ": *
 #show: qooklet.with(
   title: "常见技巧",
   author: "Yāng Xīnbīn",
