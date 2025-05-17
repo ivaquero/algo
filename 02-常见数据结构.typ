@@ -1,11 +1,7 @@
-#import "@local/scibook:0.1.0": *
-#show: doc => conf(
+#import "lib/lib.typ": *
+#show: chapter-style.with(
   title: "算法概览",
-  author: ("Yāng Xīnbīn"),
-  footer-cap: "Yāng Xīnbīn",
-  header-cap: "数据结构与算法",
-  outline-on: false,
-  doc,
+  info: info,
 )
 
 = STL
@@ -25,7 +21,7 @@ STL 大体分为六大组件，分别是：容器、算法、迭代器、仿函�
 
 #let csv1 = csv("data/stl-query.csv")
 #figure(
-  ktable(csv1, 8),
+  tableq(csv1, 8),
   caption: "访问 & 遍历",
   supplement: "表",
   kind: table,
@@ -35,7 +31,7 @@ STL 大体分为六大组件，分别是：容器、算法、迭代器、仿函�
 
 #let csv1 = csv("data/stl-info.csv")
 #figure(
-  ktable(csv1, 8),
+  tableq(csv1, 8),
   caption: "信息",
   supplement: "表",
   kind: table,
@@ -45,7 +41,7 @@ STL 大体分为六大组件，分别是：容器、算法、迭代器、仿函�
 
 #let csv1 = csv("data/stl-elem.csv")
 #figure(
-  ktable(csv1, 8, inset: 0.35em),
+  tableq(csv1, 8, inset: 0.35em),
   caption: "元素操作",
   supplement: "表",
   kind: table,
@@ -58,7 +54,7 @@ STL 大体分为六大组件，分别是：容器、算法、迭代器、仿函�
 
 #let csv1 = csv("data/stl-cont.csv")
 #figure(
-  ktable(csv1, 8),
+  tableq(csv1, 8),
   caption: "容器操作",
   supplement: "表",
   kind: table,
@@ -68,7 +64,7 @@ STL 大体分为六大组件，分别是：容器、算法、迭代器、仿函�
 
 #let csv1 = csv("data/stl-iter.csv")
 #figure(
-  ktable(csv1, 3, inset: 0.35em),
+  tableq(csv1, 3, inset: 0.35em),
   caption: "迭代器",
   supplement: "表",
   kind: table,
@@ -91,8 +87,8 @@ char *message = "Hello World!";
 
 #let data = csv("data/str.csv")
 #figure(
-  ktable(data, 2),
-  caption: [字符串基本操作],
+  tableq(data, 2),
+  caption: "字符串基本操作",
   supplement: "表",
   kind: table,
 )
@@ -134,11 +130,12 @@ char *message = "Hello World!";
 - 中缀表达式（infix）：操作符介于操作数（operand）之间，如 `B + C`
 - 后缀表达式（postfix）：由前到后运算，适合计算机运算
 - 前缀表达式（prefix）：由后到前运算
+
 对中缀表达式的例子：`A + B * C`，虽然运算符`+`和`*`都在操作数之间，但存在一个运算优先级的问题。尽管四则运算的法则对人来说显而易见，计算机却需要明确地知道以何种顺序进行何种运算。杜绝歧义的写法有如下几种
 
 #let data = csv("data/op-expr.csv")
 #figure(
-  ktable(data, 3),
+  tableq(data, 3),
   caption: "运算表达式",
   supplement: "表",
   kind: table,
@@ -153,7 +150,6 @@ char *message = "Hello World!";
 #figure(
   image("images/infix2postfix.png", width: 40%),
   caption: "中缀到后缀",
-  supplement: "图",
 )
 
 == 中缀到前缀
@@ -161,5 +157,4 @@ char *message = "Hello World!";
 #figure(
   image("images/infix2prefix.png", width: 40%),
   caption: "中缀到前缀",
-  supplement: "图",
 )

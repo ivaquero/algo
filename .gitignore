@@ -5,8 +5,9 @@
 ### macOS ###
 # General
 .DS_Store
-.AppleDouble
-.LSOverride
+
+### C++ ###
+*.dSYM
 
 # Thumbnails
 ._*

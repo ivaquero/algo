@@ -1,6 +1,6 @@
 #include <cstdio>
 
-int main() {
+auto main() -> int {
   int original = 100;
   int &original_ref = original;
   printf("Original: %d\n", original);

@@ -1,11 +1,7 @@
-#import "@local/scibook:0.1.0": *
-#show: doc => conf(
+#import "lib/lib.typ": *
+#show: chapter-style.with(
   title: "C++ 速通",
-  author: ("Yāng Xīnbīn"),
-  footer-cap: "Yāng Xīnbīn",
-  header-cap: "数据结构与算法",
-  outline-on: false,
-  doc,
+  info: info,
 )
 
 = 动态规划

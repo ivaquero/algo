@@ -1,7 +1,6 @@
-#include <stdio.h>
-#include <string>
+#include <cstdio>
 
-int main() {
+auto main() -> int {
   int a = 1, b = 2, c = 3;
   auto retVal = [=, &a, &b]() mutable -> int {
     printf("inner c[%d]\n", c);

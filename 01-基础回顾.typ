@@ -1,11 +1,7 @@
-#import "@local/scibook:0.1.0": *
-#show: doc => conf(
+#import "lib/lib.typ": *
+#show: chapter-style.with(
   title: "C++ 速通",
-  author: ("Yāng Xīnbīn"),
-  footer-cap: "Yāng Xīnbīn",
-  header-cap: "数据结构与算法",
-  outline-on: false,
-  doc,
+  info: info,
 )
 
 = 数据类型
@@ -33,8 +29,8 @@
 
 #let csv1 = csv("data/print-int.csv")
 #figure(
-  ktable(csv1, 3),
-  caption: "",
+  tableq(csv1, 3),
+  caption: none,
   supplement: "表",
   kind: table,
 )
@@ -46,8 +42,8 @@
 
 #let csv1 = csv("data/print-float.csv")
 #figure(
-  ktable(csv1, 4),
-  caption: "",
+  tableq(csv1, 4),
+  caption: none,
   supplement: "表",
   kind: table,
 )
@@ -67,7 +63,7 @@
 - 类型同变量的类型
 
 #tip[
-  #h(2em) 简言之，指针变量就是记录地址的变量
+  简言之，指针变量就是记录地址的变量
 ]
 
 - `&`
@@ -111,6 +107,7 @@
 - `->` 的作用
   - 解引用
   - 指针所指的结构变量中的成员
+
 当为一个方法编程时，有时需要访问当前对象，也就是正在执行该方法的对象。在方法定义中，可以使用 `this` 指针来访问当前对象。
 
 通常情况下，这是不需要的，因为在访问成员时这是隐含的。但当需要消除歧义，例如，若声明的方法参数的名称与一个成员变量相冲突，`this` 指针就很必要。
@@ -118,8 +115,8 @@
 #let code1 = read("oop/ptr_this.cpp")
 #code(code1, lang: "c++")
 
-方法参数总是会掩盖成员，这意味着在此方法中输入 `year` 时，它指的是
-`year` 参数，而不是 `year` 成员。这时可以用 `this` 来消除歧义。
+方法参数总会掩盖成员，这意味着在此方法中输入 `year` 时，它指的是
+`year` 参数，而非 `year` 成员。此时可用 `this` 来消除歧义。
 
 = 引用
 
@@ -138,7 +135,7 @@
 
 #let csv1 = csv("data/ptr-ref.csv")
 #figure(
-  ktable(csv1, 3),
+  tableq(csv1, 3),
   caption: "指针与引用",
   supplement: "表",
   kind: table,
@@ -169,7 +166,7 @@
 
 == main()
 
-- `argc(argument count)`：保存运行时传递给 main\() 的参数个数
+- `argc(argument count)`：保存运行时传递给 `main()` 的参数个数
 - `argv[](argument vector)`：保存运行时传递`main()`的参数
   - 类型是一个字符指针数组，每个元素是一个字符指针，指向一个命令行参数
   - `argv[0]`：指向程序运行时的全路径名
@@ -199,7 +196,7 @@ Lambda 函数又称匿名函数。具有输入输出，表达式的参数就是�
 
 #let csv1 = csv("data/op-increment.csv")
 #figure(
-  ktable(csv1, 3, inset: 0.35em),
+  tableq(csv1, 3, inset: 0.35em),
   caption: "增量运算符",
   supplement: "表",
   kind: table,
