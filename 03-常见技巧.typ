@@ -1,7 +1,7 @@
 #import "lib/lib.typ": *
 #show: chapter-style.with(
   title: "常见技巧",
-  info: info,
+  info: info-algo,
 )
 
 = 数组

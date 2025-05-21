@@ -16,11 +16,10 @@
 
 迄今为止 C++ 至少有几十种构建系统，当下流行的如@sys。
 
-#let csv1 = csv("data/tools-build.csv")
+#let csv1 = csv("lib/tools-build.csv")
 #figure(
   tableq(csv1, 6, inset: 0.35em),
   caption: "常用构建系统",
-  supplement: "表",
   kind: table,
 ) <sys>
 
@@ -528,7 +527,7 @@ target_link_libraries(main PRIVATE Qt${QT_VERSION_MAJOR}::Widgets
 ```
 然后，我们为可执行文件设置属性。
 
-#let code1 = read("code/cm_dll_prop.txt")
+#let code1 = read("lib/cm_dll_prop.txt")
 #code(code1, lang: "cmake")
 
 #tip[
@@ -595,7 +594,7 @@ add_library(my_module SHARED my_module.cpp my_module.h)
 
 另外，Windows 中，CMake 会把定义在顶层模块里的 main 放在 build 里。而 my_module.dll 会在 build/my_module 里的生成。为了让 CMake 把 .dll 自动生成在 .exe 同一目录，需要设置 my_module 对象的 `*_OUTPUT_DIRECTORY` 系列属性。
 
-#let code1 = read("code/cm_dll_prop.txt")
+#let code1 = read("lib/cm_dll_prop.txt")
 #code(code1)
 
 相比之下，Linux 系统支持 `RPATH`，CMake 会让生成出来可执行文件的 `RPATH` 字段指向他链接了的 .so 文件所在目录，运行时会优先从 `RPATH` 里找链接库，所以即使不在同目录也能找到。命令行使用 `chrpath` 可轻松修改 `RPATH`。CMake 也有一些列与 `RPATH` 相关的变量 `CMAKE_*_RPATH` 来控制 `RPATH` 的使用。如

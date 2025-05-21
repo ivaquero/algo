@@ -1,7 +1,7 @@
 #import "lib/lib.typ": *
 #show: chapter-style.with(
   title: "算法概览",
-  info: info,
+  info: info-algo,
 )
 
 = STL
@@ -19,31 +19,28 @@ STL 大体分为六大组件，分别是：容器、算法、迭代器、仿函�
 
 == 访问 & 遍历
 
-#let csv1 = csv("data/stl-query.csv")
+#let csv1 = csv("lib/stl-query.csv")
 #figure(
   tableq(csv1, 8),
   caption: "访问 & 遍历",
-  supplement: "表",
   kind: table,
 )
 
 == 信息
 
-#let csv1 = csv("data/stl-info.csv")
+#let csv1 = csv("lib/stl-info.csv")
 #figure(
   tableq(csv1, 8),
   caption: "信息",
-  supplement: "表",
   kind: table,
 )
 
 == 元素操作
 
-#let csv1 = csv("data/stl-elem.csv")
+#let csv1 = csv("lib/stl-elem.csv")
 #figure(
   tableq(csv1, 8, inset: 0.35em),
   caption: "元素操作",
-  supplement: "表",
   kind: table,
 )
 
@@ -52,21 +49,19 @@ STL 大体分为六大组件，分别是：容器、算法、迭代器、仿函�
 
 == 容器操作
 
-#let csv1 = csv("data/stl-cont.csv")
+#let csv1 = csv("lib/stl-cont.csv")
 #figure(
   tableq(csv1, 8),
   caption: "容器操作",
-  supplement: "表",
   kind: table,
 )
 
 == 迭代器
 
-#let csv1 = csv("data/stl-iter.csv")
+#let csv1 = csv("lib/stl-iter.csv")
 #figure(
   tableq(csv1, 3, inset: 0.35em),
   caption: "迭代器",
-  supplement: "表",
   kind: table,
 )
 
@@ -85,11 +80,10 @@ char *message = "Hello World!";
 
 == 基本操作
 
-#let data = csv("data/str.csv")
+#let data = csv("lib/str.csv")
 #figure(
   tableq(data, 2),
   caption: "字符串基本操作",
-  supplement: "表",
   kind: table,
 )
 
@@ -133,11 +127,10 @@ char *message = "Hello World!";
 
 对中缀表达式的例子：`A + B * C`，虽然运算符`+`和`*`都在操作数之间，但存在一个运算优先级的问题。尽管四则运算的法则对人来说显而易见，计算机却需要明确地知道以何种顺序进行何种运算。杜绝歧义的写法有如下几种
 
-#let data = csv("data/op-expr.csv")
+#let data = csv("lib/op-expr.csv")
 #figure(
   tableq(data, 3),
   caption: "运算表达式",
-  supplement: "表",
   kind: table,
 )
 

@@ -1,7 +1,7 @@
 #import "lib/lib.typ": *
 #show: chapter-style.with(
   title: "C++ 速通",
-  info: info,
+  info: info-algo,
 )
 
 = 数据类型
@@ -27,11 +27,10 @@
 
 === 整型
 
-#let csv1 = csv("data/print-int.csv")
+#let csv1 = csv("lib/print-int.csv")
 #figure(
   tableq(csv1, 3),
   caption: none,
-  supplement: "表",
   kind: table,
 )
 
@@ -40,11 +39,10 @@
 
 === 浮点数
 
-#let csv1 = csv("data/print-float.csv")
+#let csv1 = csv("lib/print-float.csv")
 #figure(
   tableq(csv1, 4),
   caption: none,
-  supplement: "表",
   kind: table,
 )
 
@@ -133,11 +131,10 @@
 - 若有时必须改变我们的引用类型，必须使用一个指针。许多数据结构要求我们能够改变一个指针的值
 - 因为引用不能被重新定位，它们一般不应该被分配给`nullptr`，所以它们有时不适合
 
-#let csv1 = csv("data/ptr-ref.csv")
+#let csv1 = csv("lib/ptr-ref.csv")
 #figure(
   tableq(csv1, 3),
   caption: "指针与引用",
-  supplement: "表",
   kind: table,
 )
 
@@ -194,11 +191,10 @@ Lambda 函数又称匿名函数。具有输入输出，表达式的参数就是�
 
 == 增量运算符
 
-#let csv1 = csv("data/op-increment.csv")
+#let csv1 = csv("lib/op-increment.csv")
 #figure(
   tableq(csv1, 3, inset: 0.35em),
   caption: "增量运算符",
-  supplement: "表",
   kind: table,
 )
 
