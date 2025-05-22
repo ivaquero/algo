@@ -1,8 +1,5 @@
 #import "lib/lib.typ": *
-#show: chapter-style.with(
-  title: "C++ 速通",
-  info: info-algo,
-)
+#show: chapter-style.with(title: "C++ 速通", info: info-algo)
 
 = 数据类型
 <数据类型>
@@ -28,11 +25,7 @@
 === 整型
 
 #let csv1 = csv("lib/print-int.csv")
-#figure(
-  tableq(csv1, 3),
-  caption: none,
-  kind: table,
-)
+#figure(tableq(csv1, 3), caption: none, kind: table)
 
 #let code1 = read("oop/print_uint.cpp")
 #code(code1, lang: "c++")
@@ -40,11 +33,7 @@
 === 浮点数
 
 #let csv1 = csv("lib/print-float.csv")
-#figure(
-  tableq(csv1, 4),
-  caption: none,
-  kind: table,
-)
+#figure(tableq(csv1, 4), caption: none, kind: table)
 
 === 其他
 
@@ -67,18 +56,15 @@
 - `&`
   - 取地址符，操作对象为变量
   - `*`
-  #block(
-    height: 6em,
-    columns()[
-      - 解引用符
-        - 为右值（rvalue）
-        - 获取指针指代的对象
-        - 取地址符的逆运算
-      - 指针声明符
-        - 为左值（lvalue），即地址
-        - 右值为已赋值变量
-    ],
-  )
+  #block(height: 6em, columns()[
+    - 解引用符
+      - 为右值（rvalue）
+      - 获取指针指代的对象
+      - 取地址符的逆运算
+    - 指针声明符
+      - 为左值（lvalue），即地址
+      - 右值为已赋值变量
+  ])
 
 #let code1 = read("oop/ptr_addr.cpp")
 #code(code1, lang: "c++")
@@ -132,11 +118,7 @@
 - 因为引用不能被重新定位，它们一般不应该被分配给`nullptr`，所以它们有时不适合
 
 #let csv1 = csv("lib/ptr-ref.csv")
-#figure(
-  tableq(csv1, 3),
-  caption: "指针与引用",
-  kind: table,
-)
+#figure(tableq(csv1, 3), caption: "指针与引用", kind: table)
 
 引用通常用于函数参数列表和函数返回值。
 
@@ -192,11 +174,7 @@ Lambda 函数又称匿名函数。具有输入输出，表达式的参数就是�
 == 增量运算符
 
 #let csv1 = csv("lib/op-increment.csv")
-#figure(
-  tableq(csv1, 3, inset: 0.35em),
-  caption: "增量运算符",
-  kind: table,
-)
+#figure(tableq(csv1, 3, inset: 0.35em), caption: "增量运算符", kind: table)
 
 #let code1 = read("oop/op_increment.cpp")
 #code(code1, lang: "c++")

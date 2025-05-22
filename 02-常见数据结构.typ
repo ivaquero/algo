@@ -1,8 +1,5 @@
 #import "lib/lib.typ": *
-#show: chapter-style.with(
-  title: "算法概览",
-  info: info-algo,
-)
+#show: chapter-style.with(title: "算法概览", info: info-algo)
 
 = STL
 <STL>
@@ -20,29 +17,17 @@ STL 大体分为六大组件，分别是：容器、算法、迭代器、仿函�
 == 访问 & 遍历
 
 #let csv1 = csv("lib/stl-query.csv")
-#figure(
-  tableq(csv1, 8),
-  caption: "访问 & 遍历",
-  kind: table,
-)
+#figure(tableq(csv1, 8), caption: "访问 & 遍历", kind: table)
 
 == 信息
 
 #let csv1 = csv("lib/stl-info.csv")
-#figure(
-  tableq(csv1, 8),
-  caption: "信息",
-  kind: table,
-)
+#figure(tableq(csv1, 8), caption: "信息", kind: table)
 
 == 元素操作
 
 #let csv1 = csv("lib/stl-elem.csv")
-#figure(
-  tableq(csv1, 8, inset: 0.35em),
-  caption: "元素操作",
-  kind: table,
-)
+#figure(tableq(csv1, 8, inset: 0.35em), caption: "元素操作", kind: table)
 
 - `[]`：访问越界，直接挂掉
 - `at()`：访问越界，抛出异常
@@ -50,20 +35,12 @@ STL 大体分为六大组件，分别是：容器、算法、迭代器、仿函�
 == 容器操作
 
 #let csv1 = csv("lib/stl-cont.csv")
-#figure(
-  tableq(csv1, 8),
-  caption: "容器操作",
-  kind: table,
-)
+#figure(tableq(csv1, 8), caption: "容器操作", kind: table)
 
 == 迭代器
 
 #let csv1 = csv("lib/stl-iter.csv")
-#figure(
-  tableq(csv1, 3, inset: 0.35em),
-  caption: "迭代器",
-  kind: table,
-)
+#figure(tableq(csv1, 3, inset: 0.35em), caption: "迭代器", kind: table)
 
 = 字符串
 <字符串>
@@ -81,11 +58,7 @@ char *message = "Hello World!";
 == 基本操作
 
 #let data = csv("lib/str.csv")
-#figure(
-  tableq(data, 2),
-  caption: "字符串基本操作",
-  kind: table,
-)
+#figure(tableq(data, 2), caption: "字符串基本操作", kind: table)
 
 #let code1 = read("code/str_op.cpp")
 #code(code1, lang: "c++")
@@ -128,11 +101,7 @@ char *message = "Hello World!";
 对中缀表达式的例子：`A + B * C`，虽然运算符`+`和`*`都在操作数之间，但存在一个运算优先级的问题。尽管四则运算的法则对人来说显而易见，计算机却需要明确地知道以何种顺序进行何种运算。杜绝歧义的写法有如下几种
 
 #let data = csv("lib/op-expr.csv")
-#figure(
-  tableq(data, 3),
-  caption: "运算表达式",
-  kind: table,
-)
+#figure(tableq(data, 3), caption: "运算表达式", kind: table)
 
 == 中缀到后缀
 对表达式 `A + ( B * C )`，需要两步
@@ -140,14 +109,8 @@ char *message = "Hello World!";
 - 将 `*` 移到对应的 `)` 所在位置，去掉对应的 `(`，得到 `B C *`
 - 将 `+` 移到对应的 `)` 所在位置，去掉对应的 `(`，得到 `A B C * +`
 
-#figure(
-  image("images/infix2postfix.png", width: 40%),
-  caption: "中缀到后缀",
-)
+#figure(image("images/infix2postfix.png", width: 40%), caption: "中缀到后缀")
 
 == 中缀到前缀
 
-#figure(
-  image("images/infix2prefix.png", width: 40%),
-  caption: "中缀到前缀",
-)
+#figure(image("images/infix2prefix.png", width: 40%), caption: "中缀到前缀")

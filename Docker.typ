@@ -1,19 +1,12 @@
 #import "lib/lib.typ": *
-#show: chapter-style.with(
-  title: "Docker 入门",
-  info: info-tool,
-)
+#show: chapter-style.with(title: "Docker 入门", info: info-tool)
 
 = container
 
 == run
 
 #let data = csv("lib/docker-run.csv")
-#figure(
-  tableq(data, 5),
-  caption: "命令行参数",
-  kind: table,
-)
+#figure(tableq(data, 5), caption: "命令行参数", kind: table)
 
 == 其他
 
