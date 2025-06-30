@@ -1,5 +1,0 @@
-类型,标识符（有符号）,标识符（无符号）
-int,%d,%u
-short,%hd,%hu
-long,%ld,%lu
-long long,%lld,%llu
