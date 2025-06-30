@@ -1,5 +1,5 @@
 #import "lib/lib.typ": *
-#show: chapter-style.with(title: "C++ 速通", info: info-algo)
+#show: chapter-style.with(title: "动态规划", info: info-algo)
 
 = 动态规划
 <动态规划>
