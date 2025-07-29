@@ -13,7 +13,7 @@
 
 对中缀表达式的例子：`A + B * C`，虽然运算符`+`和`*`都在操作数之间，但存在一个运算优先级的问题。尽管四则运算的法则对人来说显而易见，计算机却需要明确地知道以何种顺序进行何种运算。杜绝歧义的写法有如下几种
 
-#let data = csv("lib/op-expr.csv")
+#let data = csv("data/op-expr.csv")
 #figure(tableq(data, 3), caption: "运算表达式", kind: table)
 
 == 中缀到后缀

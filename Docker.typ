@@ -5,7 +5,7 @@
 
 == run
 
-#let data = csv("lib/tools-docker.csv")
+#let data = csv("data/tools-docker.csv")
 #figure(tableq(data, 5), caption: "命令行参数", kind: table)
 
 == 其他
@@ -21,5 +21,5 @@ docker run -d --name nginx_host -p 8080:80 -v /opt/nginx:/opt/nginx/html nginx:l
 ```
 上述命令可转写为 `docker-compose.yml` 文件：
 
-#let compose = read("lib/dockerc.yml")
+#let compose = read("data/dockerc.yml")
 #code(compose, lang: "yaml")
