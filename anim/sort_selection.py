@@ -34,14 +34,14 @@ class SelectionSort(Scene):
 
         # Code snippet at the bottom
         selection_sort_code = """
-def selection_sort(arr):
-    n = len(arr)
-    for i in range(n - 1):
-        min_index = i
-        for j in range(i + 1, n):
-            if arr[j] < arr[min_index]:
-                min_index = j
-        arr[i], arr[min_index] = arr[min_index], arr[i]
+        def selection_sort(arr):
+            n = len(arr)
+            for i in range(n - 1):
+                min_index = i
+                for j in range(i + 1, n):
+                    if arr[j] < arr[min_index]:
+                        min_index = j
+                arr[i], arr[min_index] = arr[min_index], arr[i]
         """
         code_display = self.display_code(selection_sort_code)
 
