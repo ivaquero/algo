@@ -13,7 +13,7 @@
 
 迄今为止 C++ 至少有几十种构建系统，当下流行的如@sys。
 
-#let csv1 = csv("lib/tools-make.csv")
+#let csv1 = csv("data/tools-make.csv")
 #figure(
   tableq(csv1, 6, inset: 0.35em),
   caption: "常用构建系统",
