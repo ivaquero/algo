@@ -1,15 +1,14 @@
 CompileFlags:
-  Add: [-Wno-documentation, -Wno-missing-prototypes, -std=c++17]
+  Add: [-Wno-documentation, -Wno-missing-prototypes]
 
 Diagnostics:
   ClangTidy:
-    Add:
-      [
+    Add: [
         performance-*,
         bugprone-*,
-        modernize-*,
         clang-analyzer-*,
         # readability-identifier*,
+        # modernize-*,
       ]
     CheckOptions:
       readability-identifier-naming.VariableCase: camelCase
