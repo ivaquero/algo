@@ -23,8 +23,14 @@
 - 将 `*` 移到对应的 `)` 所在位置，去掉对应的 `(`，得到 `B C *`
 - 将 `+` 移到对应的 `)` 所在位置，去掉对应的 `(`，得到 `A B C * +`
 
-#figure(image("images/infix2postfix.png", width: 40%), caption: "中缀到后缀")
+#figure(
+  image("images/infix2postfix.png", width: 40%),
+  caption: "中缀到后缀",
+)
 
 == 中缀到前缀
 
-#figure(image("images/infix2prefix.png", width: 40%), caption: "中缀到前缀")
+#figure(
+  image("images/infix2prefix.png", width: 40%),
+  caption: "中缀到前缀",
+)
