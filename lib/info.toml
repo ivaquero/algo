@@ -1,11 +1,5 @@
 [algo]
-    title = ""
-    footer = "Yāng Xīnbīn"
-    header = "数据结构与算法"
-    lang = "zh"
-
-[tool]
-    title = ""
-    footer = "Yāng Xīnbīn"
-    header = "编程工具链"
-    lang = "zh"
+title = ""
+footer = "Yāng Xīnbīn"
+header = "数据结构与算法"
+lang = "zh"

@@ -3,4 +3,3 @@
 #import "@preview/rexllent:0.4.0": xlsx-parser
 
 #let info-algo = toml("info.toml").algo
-#let info-tool = toml("info.toml").tool
